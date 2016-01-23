@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   get 'home/home'
+  get 'home/rsvp'
+  get 'home/accommodations'
+  get 'home/transportation'
+  get 'home/local_attractions'
 
   resources :rsvps
   resources :song_requests
