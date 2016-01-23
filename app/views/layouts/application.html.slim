@@ -6,4 +6,8 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
-    = yield
+    div id="header"
+    div id="links"
+      = link_to "Home", root_path
+    div id="content"
+      = yield
