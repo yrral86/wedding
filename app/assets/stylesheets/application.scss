@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  background-image: image-url("dark-wood-background.jpg");
+  background-attachment: fixed;
+}
+
+div#header {
+  height: 300px;
+  background-image: image-url("engagement-cali.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+div#links {
+  background-color: white;
+  padding: 10px;
+}
