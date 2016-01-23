@@ -14,9 +14,19 @@
  *= require_self
  */
 
+@font-face {
+  font-family: "Papyrus";
+  src:font-url("papyrus.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   background-image: image-url("dark-wood-background.jpg");
   background-attachment: fixed;
+  font-family: "Papyrus";
+  font-size: large;
+  line-height: 135%;
 }
 
 div#header {
@@ -27,6 +37,20 @@ div#header {
 }
 
 div#links {
-  background-color: white;
+  background-color: OldLace;
   padding: 10px;
+
+  a {
+    padding: 10px;
+  }
+}
+
+.content_box {
+  margin: 10px;
+  background-color: OldLace;
+  //font: ;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  opacity: 0.9;
 }
