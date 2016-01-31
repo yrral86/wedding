@@ -1,17 +1,7 @@
 <div id="paypal_button">
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" onsubmit="showPaypalLoading(); return true;">
 <input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="ABB7CCMAK2LZJ">
-<table align="center">
-<tr><td><input type="hidden" name="on0" value="Honeymoon Fund">Honeymoon Fund</td></tr><tr><td><select name="os0">
-	<option value="Contribute">Contribute $10.00 USD</option>
-	<option value="Contribute">Contribute $25.00 USD</option>
-	<option value="Contribute">Contribute $50.00 USD</option>
-	<option value="Contribute">Contribute $75.00 USD</option>
-	<option value="Contribute">Contribute $100.00 USD</option>
-</select> </td></tr>
-</table>
-<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="hosted_button_id" value="PS5BS25W7RCJA">
 <input type="image" src="<%= image_path 'contribute-button.png' %>" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
