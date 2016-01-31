@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   get 'home/home'
   get 'home/rsvp'
-  get 'home/accommodations'
-  get 'home/transportation'
-  get 'home/local_attractions'
+  get 'home/information'
   get 'home/itinerary'
   get 'home/honeymoon_fund'
 

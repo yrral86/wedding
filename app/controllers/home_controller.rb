@@ -5,13 +5,7 @@ class HomeController < ApplicationController
   def rsvp
   end
 
-  def accommodations
-  end
-
-  def transportation
-  end
-
-  def local_attractions
+  def information
   end
 
   def itinerary
