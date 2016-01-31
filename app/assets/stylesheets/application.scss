@@ -31,14 +31,29 @@ body {
 
 div#header {
   height: 300px;
-  background-image: image-url("engagement-cali.png");
+  background-image: image-url("header.png");
   background-repeat: no-repeat;
   background-position: center center;
+  margin-bottom: 10px;
+}
+
+div#wrapper {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div#link-container {
+  background-color: OldLace;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 div#links {
-  background-color: OldLace;
-  padding: 10px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 
   a {
     padding: 10px;

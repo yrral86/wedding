@@ -7,11 +7,13 @@ html
     = csrf_meta_tags
   body
     div id="header"
-    div id="links"
-      = link_to "Home", root_path
-      = link_to "RSVP", home_rsvp_path
-      = link_to "Accommodations", home_accommodations_path
-      = link_to "Transporation", home_transportation_path
-      = link_to "Local Attractions", home_local_attractions_path
-    div id="content"
-      = yield
+    div id="wrapper"
+      div id="link-container"
+        div id="links"
+          = link_to "Home", root_path
+          = link_to "RSVP", home_rsvp_path
+          = link_to "Accommodations", home_accommodations_path
+          = link_to "Transporation", home_transportation_path
+          = link_to "Local Attractions", home_local_attractions_path
+      div id="content"
+        = yield
