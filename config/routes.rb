@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'home/accommodations'
   get 'home/transportation'
   get 'home/local_attractions'
+  get 'home/itinerary'
+  get 'home/honeymoon_fund'
 
   resources :rsvps
   resources :song_requests

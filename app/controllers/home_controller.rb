@@ -13,4 +13,10 @@ class HomeController < ApplicationController
 
   def local_attractions
   end
+
+  def itinerary
+  end
+
+  def honeymoon_fund
+  end
 end

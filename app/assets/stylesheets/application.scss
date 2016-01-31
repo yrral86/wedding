@@ -51,9 +51,8 @@ div#link-container {
 }
 
 div#links {
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  text-align: center;
 
   a {
     padding: 10px;
@@ -62,10 +61,10 @@ div#links {
 
 .content_box {
   margin: 10px;
-  background-color: OldLace;
+  background-color: rgba(253,245,230,0.9);
   //font: ;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
-  opacity: 0.9;
 }
+
