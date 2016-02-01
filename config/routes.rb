@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'home/information'
   get 'home/itinerary'
   get 'home/honeymoon_fund'
+  get 'home/contact'
 
   resources :rsvps
   resources :song_requests

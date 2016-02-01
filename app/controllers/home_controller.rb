@@ -13,4 +13,7 @@ class HomeController < ApplicationController
 
   def honeymoon_fund
   end
+
+  def contact
+  end
 end
