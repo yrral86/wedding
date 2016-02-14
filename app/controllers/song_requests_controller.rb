@@ -10,6 +10,7 @@ class SongRequestsController < ApplicationController
   # GET /song_requests/1
   # GET /song_requests/1.json
   def show
+    render layout: false
   end
 
   # GET /song_requests/new
@@ -27,6 +28,7 @@ class SongRequestsController < ApplicationController
       if @song_request.save
         format.html { redirect_to @song_request }
         format.json { render :show, status: :created, location: @song_request }
+        format.js { render text: "append_song_request(#{@song_request.id})" }
       else
         format.html { render :new }
         format.json { render json: @song_request.errors, status: :unprocessable_entity }

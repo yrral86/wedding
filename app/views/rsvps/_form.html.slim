@@ -1,4 +1,4 @@
-= form_for @rsvp do |f|
+= form_for @rsvp, remote: true do |f|
   - if @rsvp.errors.any?
     #error_explanation
       h2 = "#{pluralize(@rsvp.errors.count, "error")} prohibited this rsvp from being saved:"

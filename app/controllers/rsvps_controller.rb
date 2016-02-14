@@ -10,6 +10,7 @@ class RsvpsController < ApplicationController
   # GET /rsvps/1
   # GET /rsvps/1.json
   def show
+    render layout: false
   end
 
   # GET /rsvps/new
@@ -27,6 +28,7 @@ class RsvpsController < ApplicationController
       if @rsvp.save
         format.html { redirect_to @rsvp }
         format.json { render :show, status: :created, location: @rsvp }
+        format.js { render text: "show_rsvp(#{@rsvp.id})" }
       else
         format.html { render :new }
         format.json { render json: @rsvp.errors, status: :unprocessable_entity }
