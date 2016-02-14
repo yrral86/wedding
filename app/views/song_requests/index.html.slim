@@ -1,19 +1,20 @@
-h1 Listing song_requests
+div.content_box
+  h1 Listing Song Requests
 
-table
-  thead
-    tr
-      th Request
-      th
-      th
-      th
-
-  tbody
-    - @song_requests.each do |song_request|
+  table
+    thead
       tr
-        td = song_request.request
-        td = link_to 'Show', song_request
+        th Request
+        th
+        th
+        th
 
-br
+    tbody
+      - @song_requests.each do |song_request|
+        tr
+          td = song_request.request
+          td = link_to 'Show', song_request
 
-= link_to 'New Song request', new_song_request_path
+  br
+
+  = link_to 'New Song Request', new_song_request_path

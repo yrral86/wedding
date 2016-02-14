@@ -1,15 +1,14 @@
-p#notice = notice
+div.content_box
+  p#notice = notice
 
-p
-  strong Name:
-  = @rsvp.name
-p
-  strong Attendees:
-  = @rsvp.attendees
-p
-  strong Attending:
-  = @rsvp.attending
+  p
+    strong Name:
+    = @rsvp.name
+  p
+    strong Attendees:
+    = @rsvp.attendees
+  p
+    strong Attending:
+    = @rsvp.attending
 
-= link_to 'Edit', edit_rsvp_path(@rsvp)
-'|
-= link_to 'Back', rsvps_path
+  = link_to 'Back', rsvps_path

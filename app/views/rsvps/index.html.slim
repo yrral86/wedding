@@ -1,23 +1,24 @@
-h1 Listing rsvps
+div.content_box
+  h1 Listing rsvps
 
-table
-  thead
-    tr
-      th Name
-      th Attendees
-      th Attending
-      th
-      th
-      th
-
-  tbody
-    - @rsvps.each do |rsvp|
+  table
+    thead
       tr
-        td = rsvp.name
-        td = rsvp.attendees
-        td = rsvp.attending
-        td = link_to 'Show', rsvp
+        th Name
+        th Attendees
+        th Attending
+        th
+        th
+        th
 
-br
+    tbody
+      - @rsvps.each do |rsvp|
+        tr
+          td = rsvp.name
+          td = rsvp.attendees
+          td = rsvp.attending
+          td = link_to 'Show', rsvp
 
-= link_to 'New Rsvp', new_rsvp_path
+  br
+
+  = link_to 'New Rsvp', new_rsvp_path
