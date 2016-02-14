@@ -7,11 +7,11 @@
           li = message
 
   .field
+    = f.label :name
+    = f.text_field :name
+  .field
     = f.label :attendees
     = f.number_field :attendees
-  .field
-    = f.label :note
-    = f.text_field :note
   .field
     = f.label :attending
     = f.check_box :attending

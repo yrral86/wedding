@@ -1,14 +1,8 @@
 p#notice = notice
 
 p
-  strong Artist:
-  = @song_request.artist
-p
-  strong Name:
-  = @song_request.name
-p
-  strong Requested by:
-  = @song_request.requested_by
+  strong Request:
+  = @song_request.request
 
 = link_to 'Edit', edit_song_request_path(@song_request)
 '|

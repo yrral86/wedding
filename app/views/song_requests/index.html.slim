@@ -3,9 +3,7 @@ h1 Listing song_requests
 table
   thead
     tr
-      th Artist
-      th Name
-      th Requested by
+      th Request
       th
       th
       th
@@ -13,12 +11,8 @@ table
   tbody
     - @song_requests.each do |song_request|
       tr
-        td = song_request.artist
-        td = song_request.name
-        td = song_request.requested_by
+        td = song_request.request
         td = link_to 'Show', song_request
-        td = link_to 'Edit', edit_song_request_path(song_request)
-        td = link_to 'Destroy', song_request, data: {:confirm => 'Are you sure?'}, :method => :delete
 
 br
 
