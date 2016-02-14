@@ -6,9 +6,8 @@ Rails.application.routes.draw do
   get 'home/honeymoon_fund'
   get 'home/contact'
 
-  resources :rsvps
-  resources :song_requests
-  resources :guests
+  resources :rsvps, only: [:index, :new, :create, :show]
+  resources :song_requests, only: [:index, :new, :create, :show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
