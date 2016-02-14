@@ -11,29 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160123193116) do
-
-  create_table "guests", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "rsvp_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20160214185903) do
 
   create_table "rsvps", force: :cascade do |t|
     t.integer  "attendees"
-    t.string   "note"
     t.boolean  "attending"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "name"
   end
 
   create_table "song_requests", force: :cascade do |t|
-    t.string   "artist"
-    t.string   "name"
-    t.string   "requested_by"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "request"
   end
 
 end
