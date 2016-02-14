@@ -15,6 +15,7 @@ class SongRequestsController < ApplicationController
   # GET /song_requests/new
   def new
     @song_request = SongRequest.new
+    render layout: false
   end
 
   # POST /song_requests

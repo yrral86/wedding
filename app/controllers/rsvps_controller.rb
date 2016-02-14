@@ -15,6 +15,7 @@ class RsvpsController < ApplicationController
   # GET /rsvps/new
   def new
     @rsvp = Rsvp.new
+    render layout: false
   end
 
   # POST /rsvps
