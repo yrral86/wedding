@@ -1,5 +1,6 @@
 div.content_box
   p#notice = notice
+  |Thank you!
 
   p
     strong Name:
@@ -9,6 +10,5 @@ div.content_box
     = @rsvp.attendees
   p
     strong Attending:
-    = @rsvp.attending
+    = @rsvp.attending ? "Yes" : "No"
 
-  = link_to 'Back', rsvps_path
