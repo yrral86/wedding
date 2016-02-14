@@ -10,9 +10,12 @@
     = f.label :name
     = f.text_field :name
   .field
-    = f.label :attendees
+    = f.label "Total attending"
     = f.number_field :attendees
   .field
-    = f.label :attending
-    = f.check_box :attending
-  .actions = f.submit
+    = f.label "Yes, I'll be there"
+    = f.radio_button :attending, true
+  .field
+    = f.label "Celebrating from afar"
+    = f.radio_button :attending, false
+  .actions = f.submit "RSVP"
