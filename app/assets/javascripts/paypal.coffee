@@ -1,2 +1,4 @@
 window.showPaypalLoading = () ->
-  document.getElementById('paypal_button').innerHTML = "Loading..."
+  button = $("#paypal_button")
+  button.hide()
+  button.after("Loading...")
